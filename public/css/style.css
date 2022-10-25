@@ -1,0 +1,87 @@
+html {
+  background-color:green;
+  width:100%;
+}
+
+div.tables > div {
+  display: flex;
+}
+
+.buttons {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  width: 226px;
+}
+
+.table {
+  height: 314px;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.tables {
+  width: 100%;
+}
+
+.thing {
+  display:flex;
+  width: 100%;
+}
+
+button.new {
+  width:100%;
+  height:30px;
+}
+
+button.notNew {
+  flex-grow:1;
+  width:1px;
+  height:40px;
+}
+
+div.deck {
+  /*display:flex;*/
+  padding:15px
+}
+
+div.cards {
+  padding: 20px;
+  height: 314px;
+  display: flex;
+  flex-direction:row;
+}
+
+div.drawn {
+  display:flex;
+}
+
+div.cardSlot {
+  height:314px;
+  width:226px;
+  padding-right:4px;
+  position:relative;
+}
+
+img {
+  height: 314px;
+  width: 226px;
+}
+
+img.cardFront {
+  animation: flip 0.5s linear 0.5s 1 reverse both running;
+
+}
+
+img.cardBack {
+  animation: flip 0.5s linear 0s 1 normal both running;
+}
+
+@keyframes flip {
+  0% {
+    width: 226px;
+  }
+  100% {
+    width: 0px;
+  }
+}
