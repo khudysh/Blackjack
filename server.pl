@@ -1,11 +1,11 @@
-:- use_module(blackjack).
+:- use_module(minimax).
 :- use_module(library(http/http_json)).
 :- use_module(library(http/json_convert)).
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 
 % The api will be accessed through root/minimax.
-:- http_handler(root(blackjack), handle_api, []).
+:- http_handler(root(minimax), handle_api, []).
 
 % rest_server(+Port)
 % Starts a http server instance.
